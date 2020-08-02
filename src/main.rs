@@ -37,7 +37,8 @@ fn render_text(image: &mut RgbImage, msg: &str) {
     let font_file = if is_ci() {
         "EncodeSans-Regular.ttf"
     } else {
-        "/System/Library/Fonts/Helvetica.ttc"
+    "C:\\Windows\\WinSxS\\amd64_microsoft-windows-font-truetype-arial_31bf3856ad364e35_10.0.18362.1_none_44e0e02b2a9382cc\\arial.ttf"
+        //"/System/Library/Fonts/Helvetica.ttc"
     };
     let font_path = std::env::current_dir().unwrap().join(font_file);
     let data = std::fs::read(&font_path).unwrap();
